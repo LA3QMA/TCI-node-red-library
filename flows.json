@@ -1,0 +1,6617 @@
+[
+    {
+        "id": "f85b16938b99f58b",
+        "type": "tab",
+        "label": "TRX",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1098fa89dc7ef689",
+        "type": "tab",
+        "label": "TCI audio - work in progres",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "689a2152c2ec7a08",
+        "type": "tab",
+        "label": "TCI - LA3QMA",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "df5b6e241f4658e3",
+        "type": "tab",
+        "label": "TCI - CW",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fb8a7e25a5bd71f1",
+        "type": "tab",
+        "label": "TCI set commands",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d7a6eff1aaf9dca8",
+        "type": "tab",
+        "label": "StealthLoop I3VHF",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "106466950c878fcb",
+        "type": "websocket-client",
+        "path": "ws://111.111.111.111:1880",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "30",
+        "subprotocol": ""
+    },
+    {
+        "id": "9aa0af0886b49a01",
+        "type": "websocket-client",
+        "path": "ws://192.168.10.133:50001",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "7a0f141d.a1751c",
+        "type": "websocket-client",
+        "path": "ws://192.168.10.133:50001",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "3543d0740301267d",
+        "type": "serial-port",
+        "serialport": "/dev/ttyUSB0",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "F",
+        "dtr": "high",
+        "rts": "high",
+        "cts": "high",
+        "dsr": "high",
+        "newline": "200",
+        "bin": "false",
+        "out": "time",
+        "addchar": "OK",
+        "responsetimeout": "400"
+    },
+    {
+        "id": "d509c05b31bc836d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "5b080c1e.92a8cc",
+        "type": "ui_tab",
+        "name": "Shack",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "07b1aac74e0e06fd",
+        "type": "ui_tab",
+        "name": "CW",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6506acb2.5e5f84",
+        "type": "ui_group",
+        "name": "TRX",
+        "tab": "5b080c1e.92a8cc",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "0ebb8fe231ed04dc",
+        "type": "ui_group",
+        "name": "CW",
+        "tab": "07b1aac74e0e06fd",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "aa5f809f6ef44226",
+        "type": "switch",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "vfo:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "modulation:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "rx_sensors:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "tx_sensors:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "start",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "stop",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "device:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "modulations_list:",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 9,
+        "x": 350,
+        "y": 640,
+        "wires": [
+            [
+                "1c911717b1e80351",
+                "80cdd768e51f2191"
+            ],
+            [
+                "e3ce1141cdfd637d",
+                "5d3bc236eee97b85"
+            ],
+            [
+                "478f07a173e85ec5"
+            ],
+            [
+                "db7f32a4ef82ee24"
+            ],
+            [
+                "5ba14b8c517e67cf"
+            ],
+            [
+                "bcba3c0f49ede93a"
+            ],
+            [
+                "25b509f7bc0a3d62"
+            ],
+            [
+                "8da76f032ea4f9ae"
+            ],
+            [
+                "0f1c907d2eb57c13"
+            ]
+        ]
+    },
+    {
+        "id": "932f12c4d7eeddcb",
+        "type": "function",
+        "z": "f85b16938b99f58b",
+        "name": "160mSwitch",
+        "func": "var n1mm = msg.payload;\nvar ant = n1mm.match(/<Antenna>(\\d)<\\/Antenna>/)\nvar freq = n1mm.match(/<TXFreq>(\\d+)<\\/TXFreq>/)\nvar radio = n1mm.match(/<RadioNr>(\\d)<\\/RadioNr>/)\n\nvar ant_rel  = global.get(\"ant_rel\");\n\nif (radio[1] == '1') { \n    if (ant[1] == '2') {\n        if(180000 <= parseInt(freq[1]) && parseInt(freq[1])  <= 190000 ) {\n            if (ant_rel =='true') {\n                global.set(\"ant_rel\",\"false\")\n                msg.payload = true;\n                return msg\n            }\n        }\n        else {\n            if (ant_rel =='false') {\n                global.set(\"ant_rel\",\"true\")\n                msg.payload = false;\n                return msg\n            }\n        }\n    }\n    else {\n        if (ant_rel =='false') {\n                global.set(\"ant_rel\",\"true\")\n                msg.payload = false;\n                return msg\n        }\n    }\n}\nmsg.payload = null\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 250,
+        "y": 1200,
+        "wires": [
+            [
+                "d961aa80395bd95f"
+            ]
+        ]
+    },
+    {
+        "id": "d961aa80395bd95f",
+        "type": "switch",
+        "z": "f85b16938b99f58b",
+        "name": "isNull",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 1200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e3ce1141cdfd637d",
+        "type": "function",
+        "z": "f85b16938b99f58b",
+        "name": "rx1_mod",
+        "func": "var mod = msg.payload\nif (mod.match(/modulation:0/)) {\n    mod = mod.substring(13).slice(0,-1)\n    msg.payload = mod.toUpperCase();\n    return msg; \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5d3bc236eee97b85",
+        "type": "function",
+        "z": "f85b16938b99f58b",
+        "name": "rx2_mod",
+        "func": "var mod = msg.payload\nif (mod.match(/modulation:1/)) {\n    mod = mod.substring(13).slice(0,-1)\n    msg.payload = mod.toUpperCase();\n    return msg; \n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "07240d0b3ded9670",
+        "type": "udp in",
+        "z": "f85b16938b99f58b",
+        "d": true,
+        "name": "",
+        "iface": "",
+        "port": "13063",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 80,
+        "y": 1200,
+        "wires": [
+            [
+                "932f12c4d7eeddcb"
+            ]
+        ]
+    },
+    {
+        "id": "a7dbd4157d00d8cb",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "13.8VDC",
+        "links": [
+            "ed7185c6a7a8aa6b"
+        ],
+        "x": 145,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bec6e385332d035c",
+        "type": "websocket in",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "server": "",
+        "client": "7a0f141d.a1751c",
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "aa5f809f6ef44226"
+            ]
+        ]
+    },
+    {
+        "id": "528620392e068bfb",
+        "type": "websocket out",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "server": "",
+        "client": "7a0f141d.a1751c",
+        "x": 610,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "db7f32a4ef82ee24",
+        "type": "rbe",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 650,
+        "y": 980,
+        "wires": [
+            [
+                "41811c4333e590e6",
+                "2aea1faea0c37615",
+                "96e63b07b09892c3",
+                "9b5b1fcdf31b9aca"
+            ]
+        ]
+    },
+    {
+        "id": "41811c4333e590e6",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "swr",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$split(msg.payload, ',')[4]\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 860,
+        "wires": [
+            [
+                "bb2c6c98cd0fd594",
+                "9b5b1fcdf31b9aca"
+            ]
+        ]
+    },
+    {
+        "id": "2aea1faea0c37615",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "pwr",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$split(msg.payload, ',')[2]\t",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 1020,
+        "wires": [
+            [
+                "37f409a517fae9b2"
+            ]
+        ]
+    },
+    {
+        "id": "478f07a173e85ec5",
+        "type": "rbe",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 650,
+        "y": 720,
+        "wires": [
+            [
+                "e4c1916295abe18a",
+                "8a37ece47c4b2ae4"
+            ]
+        ]
+    },
+    {
+        "id": "e4c1916295abe18a",
+        "type": "switch",
+        "z": "f85b16938b99f58b",
+        "name": "RX",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "rx_sensors:0",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "rx_sensors:1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 720,
+        "wires": [
+            [
+                "675ef9e1326c7f1d",
+                "30038a6a9988f09d"
+            ],
+            [
+                "d2def581aad03d5a",
+                "a39a0186460cb056"
+            ]
+        ]
+    },
+    {
+        "id": "675ef9e1326c7f1d",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "rx_sensors:0,",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": ";",
+                "fromt": "str",
+                "to": "dB",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 640,
+        "wires": [
+            [
+                "d8028379c69db638"
+            ]
+        ]
+    },
+    {
+        "id": "d2def581aad03d5a",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "rx_sensors:1,",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": ";",
+                "fromt": "str",
+                "to": "dB",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 780,
+        "wires": [
+            [
+                "3ce418d65353530c",
+                "9412a990e6c453e6"
+            ]
+        ]
+    },
+    {
+        "id": "0208aebf7ec2b333",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "clearIN",
+        "links": [
+            "18debd00639935ef"
+        ],
+        "x": 930,
+        "y": 380,
+        "wires": [
+            []
+        ],
+        "l": true
+    },
+    {
+        "id": "18debd00639935ef",
+        "type": "link out",
+        "z": "f85b16938b99f58b",
+        "name": "clearOut",
+        "mode": "link",
+        "links": [
+            "66810634a602d91b",
+            "0208aebf7ec2b333",
+            "bd738e39212eac69",
+            "76e8ed0608894da2"
+        ],
+        "x": 560,
+        "y": 1060,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "bd738e39212eac69",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "clearIN",
+        "links": [
+            "18debd00639935ef"
+        ],
+        "x": 950,
+        "y": 520,
+        "wires": [
+            []
+        ],
+        "l": true
+    },
+    {
+        "id": "bcba3c0f49ede93a",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "labelcolour",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 1060,
+        "wires": [
+            [
+                "705ad4634158e218"
+            ]
+        ]
+    },
+    {
+        "id": "66810634a602d91b",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "clearIN",
+        "links": [
+            "18debd00639935ef"
+        ],
+        "x": 1150,
+        "y": 700,
+        "wires": [
+            []
+        ],
+        "l": true
+    },
+    {
+        "id": "0626775bbc92248c",
+        "type": "link out",
+        "z": "f85b16938b99f58b",
+        "name": "StartIN",
+        "mode": "link",
+        "links": [
+            "7bd591ee1274cb09"
+        ],
+        "x": 560,
+        "y": 1120,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "7bd591ee1274cb09",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "StartOut",
+        "links": [
+            "0626775bbc92248c"
+        ],
+        "x": 80,
+        "y": 280,
+        "wires": [
+            [
+                "2efbd4ece3fdb36f",
+                "0574a9328cdb290b",
+                "ccc67867f84e5611",
+                "288adcf36e5612cc",
+                "cbb2e955c784870f",
+                "630189636e717182"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "705ad4634158e218",
+        "type": "delay",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 1060,
+        "wires": [
+            [
+                "18debd00639935ef"
+            ]
+        ]
+    },
+    {
+        "id": "2efbd4ece3fdb36f",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "get MODULATION 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "modulation:1;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "528620392e068bfb"
+            ]
+        ]
+    },
+    {
+        "id": "5ba14b8c517e67cf",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "_session",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "_msgid",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "_event",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 1120,
+        "wires": [
+            [
+                "5c5a8d38d2aff1a3"
+            ]
+        ]
+    },
+    {
+        "id": "5c5a8d38d2aff1a3",
+        "type": "delay",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "500",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 1120,
+        "wires": [
+            [
+                "0626775bbc92248c"
+            ]
+        ]
+    },
+    {
+        "id": "630189636e717182",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "get MODULATION 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "modulation:0;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "528620392e068bfb"
+            ]
+        ]
+    },
+    {
+        "id": "cbb2e955c784870f",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "get VFO 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "vfo:1,0;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 320,
+        "wires": [
+            [
+                "528620392e068bfb"
+            ]
+        ]
+    },
+    {
+        "id": "288adcf36e5612cc",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "get VFO 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "vfo:0,0;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "528620392e068bfb"
+            ]
+        ]
+    },
+    {
+        "id": "0574a9328cdb290b",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "set TX_SENSORS",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "TX_SENSORS_ENABLE:true,1000;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "528620392e068bfb"
+            ]
+        ]
+    },
+    {
+        "id": "ccc67867f84e5611",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "set RX_SENSORS",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "RX_SENSORS_ENABLE:true,1000;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 240,
+        "wires": [
+            [
+                "528620392e068bfb"
+            ]
+        ]
+    },
+    {
+        "id": "bb2c6c98cd0fd594",
+        "type": "rbe",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 1050,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37f409a517fae9b2",
+        "type": "rbe",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 1050,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76e8ed0608894da2",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "clearIN",
+        "links": [
+            "18debd00639935ef"
+        ],
+        "x": 850,
+        "y": 920,
+        "wires": [
+            [
+                "02cf2530a33120d2"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "02cf2530a33120d2",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "set 0",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1050,
+        "y": 940,
+        "wires": [
+            [
+                "bb2c6c98cd0fd594",
+                "37f409a517fae9b2"
+            ]
+        ]
+    },
+    {
+        "id": "d8028379c69db638",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "labelcolour",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1520,
+        "y": 580,
+        "wires": [
+            [
+                "8e7148da1026f59f"
+            ]
+        ]
+    },
+    {
+        "id": "3ce418d65353530c",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "labelcolour",
+                "pt": "msg",
+                "to": "green",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1520,
+        "y": 720,
+        "wires": [
+            [
+                "76cb736156ca2e6d"
+            ]
+        ]
+    },
+    {
+        "id": "96e63b07b09892c3",
+        "type": "switch",
+        "z": "f85b16938b99f58b",
+        "name": "TX",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "tx_sensors:0",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "tx_sensors:1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 790,
+        "y": 1140,
+        "wires": [
+            [
+                "a913030c06c1a2a5"
+            ],
+            [
+                "d0414ba62edfd609"
+            ]
+        ]
+    },
+    {
+        "id": "d0414ba62edfd609",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "labelcolour",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 1160,
+        "wires": [
+            [
+                "1862f361030ef745",
+                "9412a990e6c453e6"
+            ]
+        ]
+    },
+    {
+        "id": "a913030c06c1a2a5",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "labelcolour",
+                "pt": "msg",
+                "to": "red",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 1100,
+        "wires": [
+            [
+                "39c7e3cabba8af3e"
+            ]
+        ]
+    },
+    {
+        "id": "a41da3dde2672489",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "RX1In",
+        "links": [
+            "39c7e3cabba8af3e",
+            "8e7148da1026f59f"
+        ],
+        "x": 1070,
+        "y": 340,
+        "wires": [
+            []
+        ],
+        "l": true
+    },
+    {
+        "id": "0e18fd6c9d85b62d",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "RX2In",
+        "links": [
+            "76cb736156ca2e6d",
+            "1862f361030ef745",
+            "888e466d7b09b10a"
+        ],
+        "x": 1070,
+        "y": 440,
+        "wires": [
+            []
+        ],
+        "l": true
+    },
+    {
+        "id": "39c7e3cabba8af3e",
+        "type": "link out",
+        "z": "f85b16938b99f58b",
+        "name": "RX1Out",
+        "mode": "link",
+        "links": [
+            "a41da3dde2672489"
+        ],
+        "x": 1180,
+        "y": 1100,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "1862f361030ef745",
+        "type": "link out",
+        "z": "f85b16938b99f58b",
+        "name": "RX2Out",
+        "mode": "link",
+        "links": [
+            "0e18fd6c9d85b62d",
+            "e2e58cdbbaa040c4"
+        ],
+        "x": 1180,
+        "y": 1160,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "8e7148da1026f59f",
+        "type": "link out",
+        "z": "f85b16938b99f58b",
+        "name": "RX1Out",
+        "mode": "link",
+        "links": [
+            "a41da3dde2672489"
+        ],
+        "x": 1700,
+        "y": 580,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "76cb736156ca2e6d",
+        "type": "link out",
+        "z": "f85b16938b99f58b",
+        "name": "RX2Out",
+        "mode": "link",
+        "links": [
+            "0e18fd6c9d85b62d",
+            "e2e58cdbbaa040c4"
+        ],
+        "x": 1700,
+        "y": 720,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "9412a990e6c453e6",
+        "type": "trigger",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "op1": "",
+        "op2": "0",
+        "op1type": "nul",
+        "op2type": "str",
+        "duration": "2",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1380,
+        "y": 940,
+        "wires": [
+            [
+                "c0cd7a19a9cd65dc",
+                "92a949fdd53a5c8f"
+            ]
+        ]
+    },
+    {
+        "id": "c0cd7a19a9cd65dc",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "labelcolour",
+                "pt": "msg",
+                "to": "#EEEEEE",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1540,
+        "y": 940,
+        "wires": [
+            [
+                "888e466d7b09b10a"
+            ]
+        ]
+    },
+    {
+        "id": "888e466d7b09b10a",
+        "type": "link out",
+        "z": "f85b16938b99f58b",
+        "name": "RX2Out",
+        "mode": "link",
+        "links": [
+            "0e18fd6c9d85b62d",
+            "e2e58cdbbaa040c4"
+        ],
+        "x": 1700,
+        "y": 940,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "17027a054185079a",
+        "type": "status",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "scope": [
+            "bec6e385332d035c",
+            "528620392e068bfb"
+        ],
+        "x": 60,
+        "y": 860,
+        "wires": [
+            [
+                "b135ccbca8efb73d"
+            ]
+        ]
+    },
+    {
+        "id": "b135ccbca8efb73d",
+        "type": "switch",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "property": "status.text",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "common.status.disconnected",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 190,
+        "y": 860,
+        "wires": [
+            [
+                "bcba3c0f49ede93a"
+            ]
+        ]
+    },
+    {
+        "id": "8a37ece47c4b2ae4",
+        "type": "link out",
+        "z": "f85b16938b99f58b",
+        "name": "clearTXOut",
+        "mode": "link",
+        "links": [
+            "55ca3dde880cd433"
+        ],
+        "x": 630,
+        "y": 820,
+        "wires": [],
+        "l": true
+    },
+    {
+        "id": "55ca3dde880cd433",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "clearTXIN",
+        "links": [
+            "8a37ece47c4b2ae4"
+        ],
+        "x": 840,
+        "y": 960,
+        "wires": [
+            [
+                "02cf2530a33120d2"
+            ]
+        ],
+        "l": true
+    },
+    {
+        "id": "92a949fdd53a5c8f",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "labelcolour",
+                "pt": "msg",
+                "to": "#EEEEEE",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1540,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "30038a6a9988f09d",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "rx_sensors:0,",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": ";",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 600,
+        "wires": [
+            [
+                "6a84d220b0c58421"
+            ]
+        ]
+    },
+    {
+        "id": "a39a0186460cb056",
+        "type": "change",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "rx_sensors:1,",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": ";",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 960,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "865b04963fd6c82b",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "offTRXIn",
+        "links": [
+            "44ab5fe341d13bfa",
+            "168b1167dfcc7d07"
+        ],
+        "x": 45,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b5b1fcdf31b9aca",
+        "type": "debug",
+        "z": "f85b16938b99f58b",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "6a84d220b0c58421",
+        "type": "debug",
+        "z": "f85b16938b99f58b",
+        "d": true,
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b023f9359cdb38f9",
+        "type": "inject",
+        "z": "f85b16938b99f58b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "cw_macros:0,CQ CQ de N0CALL;",
+        "payloadType": "str",
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "528620392e068bfb"
+            ]
+        ]
+    },
+    {
+        "id": "1c911717b1e80351",
+        "type": "function",
+        "z": "f85b16938b99f58b",
+        "name": "rx1_freq",
+        "func": "var rx_freq = msg.payload\nif (rx_freq.match(/vfo:0,0/)) {\n    rx_freq = rx_freq.substring(8).slice(0,-1)\n    if (rx_freq.length == 9) rx_freq = rx_freq.slice(0, 3) + \".\" + rx_freq.slice(3, 9);\n    if (rx_freq.length == 8) rx_freq = rx_freq.slice(0, 2) + \".\" + rx_freq.slice(2, 9);\n    if (rx_freq.length == 7) rx_freq = rx_freq.slice(0, 1) + \".\" + rx_freq.slice(1, 9);\n    msg.payload = rx_freq;\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80cdd768e51f2191",
+        "type": "function",
+        "z": "f85b16938b99f58b",
+        "name": "rx2_freq",
+        "func": "var rx_freq = msg.payload\nif (rx_freq.match(/vfo:1,0/)) {\n    rx_freq = rx_freq.substring(8).slice(0,-1)\n    if (rx_freq.length == 9) rx_freq = rx_freq.slice(0, 3) + \".\" + rx_freq.slice(3, 9);\n    if (rx_freq.length == 8) rx_freq = rx_freq.slice(0, 2) + \".\" + rx_freq.slice(2, 9);\n    if (rx_freq.length == 7) rx_freq = rx_freq.slice(0, 1) + \".\" + rx_freq.slice(1, 9);\n    msg.payload = rx_freq;\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25b509f7bc0a3d62",
+        "type": "debug",
+        "z": "f85b16938b99f58b",
+        "name": "DEVICE:",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "0f1c907d2eb57c13",
+        "type": "debug",
+        "z": "f85b16938b99f58b",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 180,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "8da76f032ea4f9ae",
+        "type": "debug",
+        "z": "f85b16938b99f58b",
+        "name": "modulations_list:",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "7a3c3ae5cc437a04",
+        "type": "link in",
+        "z": "f85b16938b99f58b",
+        "name": "link in 1",
+        "links": [
+            "c5112d3b58119fc5"
+        ],
+        "x": 535,
+        "y": 180,
+        "wires": [
+            [
+                "528620392e068bfb"
+            ]
+        ]
+    },
+    {
+        "id": "1b0d565567d8a007",
+        "type": "comment",
+        "z": "f85b16938b99f58b",
+        "name": "Flow from SQ3RX via eesdr.com forum",
+        "info": "",
+        "x": 270,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "5d30dce70b5a916e",
+        "type": "websocket in",
+        "z": "1098fa89dc7ef689",
+        "d": true,
+        "name": "",
+        "server": "",
+        "client": "",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "27453352d82d0864"
+            ]
+        ]
+    },
+    {
+        "id": "27453352d82d0864",
+        "type": "switch",
+        "z": "1098fa89dc7ef689",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "dds:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "vfo:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "modulation:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "rx_sensors:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "tx_sensors:",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "start",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "stop",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 7,
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "d5e2999ac186f897"
+            ],
+            [
+                "d5e2999ac186f897",
+                "548ba564c90cca46"
+            ],
+            [
+                "d5e2999ac186f897"
+            ],
+            [],
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d5e2999ac186f897",
+        "type": "debug",
+        "z": "1098fa89dc7ef689",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "9866388045f64ba2",
+        "type": "websocket out",
+        "z": "1098fa89dc7ef689",
+        "d": true,
+        "name": "1",
+        "server": "",
+        "client": "106466950c878fcb",
+        "x": 1090,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "6fcbbea7bd91ace5",
+        "type": "websocket in",
+        "z": "1098fa89dc7ef689",
+        "d": true,
+        "name": "",
+        "server": "",
+        "client": "9aa0af0886b49a01",
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "27453352d82d0864"
+            ]
+        ]
+    },
+    {
+        "id": "d05eb864af0f6a98",
+        "type": "debug",
+        "z": "1098fa89dc7ef689",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "548ba564c90cca46",
+        "type": "function",
+        "z": "1098fa89dc7ef689",
+        "name": "function 3",
+        "func": "//String.prototype.splice = function (idx, rem, str) {\n//    return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));\n//};\n\n\nvar rx_freq = msg.payload\nif (rx_freq.match(/vfo:0,0/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -3)\n//    if (rx_freq.length == 6) rx_freq = rx_freq.splice(2, 0, '.');\n//    if (rx_freq.length == 5) rx_freq = rx_freq.splice(1, 0, '.');\n    msg.payload = rx_freq;\n\n}\nnode.send(msg);\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 140,
+        "wires": [
+            [
+                "d05eb864af0f6a98",
+                "09ac11dd8bb5894c"
+            ]
+        ]
+    },
+    {
+        "id": "09ac11dd8bb5894c",
+        "type": "change",
+        "z": "1098fa89dc7ef689",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "hfgg",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 200,
+        "wires": [
+            [
+                "9866388045f64ba2"
+            ]
+        ]
+    },
+    {
+        "id": "9e7d995933d763ed",
+        "type": "comment",
+        "z": "1098fa89dc7ef689",
+        "name": "TCI audio - websocket",
+        "info": "import websocket\nimport _thread\nimport time\nimport rel\n\ndef on_message(ws, message):\n    print(message)\n\ndef on_error(ws, error):\n    print(error)\n\ndef on_close(ws, close_status_code, close_msg):\n    print(\"### closed ###\")\n\ndef on_open(ws):\n    print(\"Opened connection\")\n    ws.send('IQ_SAMPLERATE:8000;')\n    ws.send('audio_samplerate:8000;')\n    ws.send('audio_start:0;')\n #   ws.send('iq_start:0;')\n\n\nif __name__ == \"__main__\":\n    websocket.enableTrace(True)\n    ws = websocket.WebSocketApp(\"ws://192.168.10.133:50001\",\n                              on_open=on_open,\n                              on_message=on_message,\n                              on_error=on_error,\n                              on_close=on_close)\n\n    ws.run_forever(dispatcher=rel, reconnect=5)  # Set dispatcher to automatic reconnection, 5 second reconnect delay if connec>\n    rel.signal(2, rel.abort)  # Keyboard Interrupt\n    rel.dispatch()\n\n\n#from websocket import create_connection\n",
+        "x": 140,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "c25bdf76faa2c2e2",
+        "type": "comment",
+        "z": "689a2152c2ec7a08",
+        "name": "List of all commands TCI 1.9 - These can be used to create a nice dashboard",
+        "info": "protocol:ExpertSDR3,1.9;\ndevice:SunSDR2DX;\nreceive_only:false;\ntrx_count:2;\nchannels_count:2;\nvfo_limits:0,160000000;\nif_limits:-156250,156250;\nmodulations_list:AM,LSB,USB,CW,NFM,WSPR,FT8,FT4,JT65,JT9,RTTY,BPSK,DIGL,DIGU,WFM,DRM;\niq_samplerate:48000;\naudio_samplerate:48000;\nvolume:0;\nmute:false;\nmon_volume:0;\nmon_enable:true;\ndigl_offset:0;\ndigu_offset:0;\ndds:0,18129150;\ndds:1,145001001;\nif:0,0,-31100;\nif:0,1,-45250;\nif:1,0,0;\nif:1,1,-1001;\nvfo:0,0,18098050;\nvfo:0,1,18083900;\nvfo:1,0,145001001;\nvfo:1,1,145000000;\nmodulation:0,DIGU;\nmodulation:1,WFM;\nagc_mode:0,normal;\nagc_gain:0,120;\nagc_mode:1,normal;\nagc_gain:1,100;\nrx_filter_band:0,40,3500;\nrx_filter_band:1,-120000,120000;\nrx_nb_enable:0,false;\nrx_nb_param:0,70,20;\nrx_nb_enable:1,false;\nrx_nb_param:1,70,20;\nrx_bin_enable:0,false;\nrx_bin_enable:1,false;\nrx_nr_enable:0,false;\nrx_nr_enable:1,false;\nrx_anc_enable:0,false;\nrx_anc_enable:1,false;\nrx_anf_enable:0,false;\nrx_anf_enable:1,false;\nrx_apf_enable:0,false;\nrx_apf_enable:1,false;\nrx_dse_enable:0,false;\nrx_dse_enable:1,false;\nrx_nf_enable:0,false;\nrx_nf_enable:1,false;\nrx_enable:1,false;\ntx_enable:0,true;\ntx_enable:1,true;\nlock:0,false;\nlock:1,false;\nrx_channel_enable:0,1,false;\nrit_enable:0,false;\nxit_enable:0,false;\nsplit_enable:0,false;\nrit_offset:0,0;\nxit_offset:0,0;\nsql_enable:0,false;\nsql_level:0,-80;\nrx_mute:0,false;\nrx_volume:0,0,0;\nrx_balance:0,0,0;\nrx_volume:0,1,0;\nrx_balance:0,1,0;\nrx_channel_enable:1,1,false;\nrit_enable:1,false;\nxit_enable:1,false;\nsplit_enable:1,false;\nrit_offset:1,0;\nxit_offset:1,0;\nsql_enable:1,false;\nsql_level:1,-80;\nrx_mute:1,false;\nrx_volume:1,0,0;\nrx_balance:1,0,0;\nrx_volume:1,1,0;\nrx_balance:1,1,0;\ncw_macros_speed:35;\ncw_macros_delay:10;\ncw_keyer_speed:1;\ndrive:0,94;\ntune_drive:0,0;\ndrive:1,0;\ntune_drive:1,0;\ntrx:0,false;\ntune:0,false;\niq_stop:0;\ntrx:1,false;\ntune:1,false;\niq_stop:1;\napp_focus:false;\ntx_frequency:18098050;\naudio_stream_sample_type:float32;\naudio_stream_channels:2;\nstart;\nready;",
+        "x": 310,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d64bd1c8b67f895d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "protocol:ExpertSDR3,1.9;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "protocol:ExpertSDR3,1.9;",
+        "payloadType": "str",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "e331bf6985ebe30f"
+            ]
+        ]
+    },
+    {
+        "id": "e331bf6985ebe30f",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 5",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/protocol:/)) {\n    rx_freq = rx_freq.substring(9).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 120,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "4cb7e3568badc0fd",
+        "type": "debug",
+        "z": "689a2152c2ec7a08",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "64949845c12f5812",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "device:SunSDR2DX;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "device:SunSDR2DX;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "4bd7f7d33fc1dec7"
+            ]
+        ]
+    },
+    {
+        "id": "4bd7f7d33fc1dec7",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 6",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/device:/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n    \n    msg.payload = rx_freq;\n //   msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "627e53879f6503f2",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "receive_only:false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "receive_only:false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "d1974f62a3cf710d"
+            ]
+        ]
+    },
+    {
+        "id": "d1974f62a3cf710d",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 7",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/receive_only:/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n //   msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 200,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "fecec9d9ef897db0",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 8",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/trx_count:/)) {\n    rx_freq = rx_freq.substring(10).slice(0, -1)\n    \n    msg.payload = rx_freq;\n //   msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "9d82ddce2c65a58b",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "trx_count:2;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "trx_count:2;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "fecec9d9ef897db0"
+            ]
+        ]
+    },
+    {
+        "id": "53b602cdcc219577",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 9",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/channels_count:/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n    \n    msg.payload = rx_freq;\n //   msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 280,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "661e2aee72946265",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "channels_count:2;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "channels_count:2;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 280,
+        "wires": [
+            [
+                "53b602cdcc219577"
+            ]
+        ]
+    },
+    {
+        "id": "1b8c4f9b0b1896d8",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "vfo_limits:0,160000000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "vfo_limits:0,160000000;",
+        "payloadType": "str",
+        "x": 140,
+        "y": 320,
+        "wires": [
+            [
+                "2e62343410d3fb07"
+            ]
+        ]
+    },
+    {
+        "id": "2e62343410d3fb07",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 10",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/vfo_limits:/)) {\n    rx_freq = rx_freq.substring(11).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 320,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "8cdfdb71b74be33a",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "if_limits:-156250,156250;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "if_limits:-156250,156250;",
+        "payloadType": "str",
+        "x": 150,
+        "y": 360,
+        "wires": [
+            [
+                "560ff57d5ad6a0df"
+            ]
+        ]
+    },
+    {
+        "id": "560ff57d5ad6a0df",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 12",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/if_limits:/)) {\n    rx_freq = rx_freq.substring(10).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 360,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "6379e93acdaa12a1",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "modulations_list:AM,LSB,USB,CW,NFM,WSPR,FT8,FT4,JT65,JT9,RTTY,BPSK,DIGL,DIGU,WFM,DRM;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "modulations_list:AM,LSB,USB,CW,NFM,WSPR,FT8,FT4,JT65,JT9,RTTY,BPSK,DIGL,DIGU,WFM,DRM;",
+        "payloadType": "str",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "f1d9f7d2e45e679d"
+            ]
+        ]
+    },
+    {
+        "id": "f1d9f7d2e45e679d",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 13",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/modulations_list:/)) {\n    rx_freq = rx_freq.substring(17).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 440,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "ab21ea67372c16e7",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "iq_samplerate:48000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "iq_samplerate:48000;",
+        "payloadType": "str",
+        "x": 140,
+        "y": 440,
+        "wires": [
+            [
+                "1fbda89b4e8c48f5"
+            ]
+        ]
+    },
+    {
+        "id": "1fbda89b4e8c48f5",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 14",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/iq_samplerate:/)) {\n    rx_freq = rx_freq.substring(14).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 440,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "969b1572636b9b1f",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "volume:-29;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "volume:-29;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "c67b1c3f96dabf3f"
+            ]
+        ]
+    },
+    {
+        "id": "c67b1c3f96dabf3f",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 15",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/volume:/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "35d9959fc2e38b59",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "mute:false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "mute:false;",
+        "payloadType": "str",
+        "x": 100,
+        "y": 520,
+        "wires": [
+            [
+                "08e31dc941ee9cc7"
+            ]
+        ]
+    },
+    {
+        "id": "08e31dc941ee9cc7",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 16",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/mute:/)) {\n    rx_freq = rx_freq.substring(5).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 520,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "6fea5c2aa334ee08",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "mon_volume:-43;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "mon_volume:-43;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 560,
+        "wires": [
+            [
+                "238028dc10c866e5"
+            ]
+        ]
+    },
+    {
+        "id": "238028dc10c866e5",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 17",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/mon_volume:/)) {\n    rx_freq = rx_freq.substring(11).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 560,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "4affe238718fae80",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "mon_enable:true;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "mon_enable:true;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "d4461779d4c1a536"
+            ]
+        ]
+    },
+    {
+        "id": "d4461779d4c1a536",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 18",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/mon_enable:/)) {\n    rx_freq = rx_freq.substring(11).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 600,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "58cb39aa7f870ec0",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "digl_offset:0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "digl_offset:0;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 640,
+        "wires": [
+            [
+                "2ab1a68475b20a83"
+            ]
+        ]
+    },
+    {
+        "id": "2ab1a68475b20a83",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 19",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/digl_offset:/)) {\n    rx_freq = rx_freq.substring(12).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 640,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "f15a1b0c3f5a3e90",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "digu_offset:0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "digu_offset:0;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "c393fb67bd7bca84"
+            ]
+        ]
+    },
+    {
+        "id": "c393fb67bd7bca84",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 20",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/digu_offset:/)) {\n    rx_freq = rx_freq.substring(12).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 680,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "7c40508c13f3c049",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "dds:0,14048000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "dds:0,14048000;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 720,
+        "wires": [
+            [
+                "4d8989dcd5f86ef8"
+            ]
+        ]
+    },
+    {
+        "id": "4d8989dcd5f86ef8",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 21",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/dds:/)) {\n    rx_freq = rx_freq.substring(4).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 720,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "25d3f6d435f9734a",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "dds:1,14048000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "dds:1,14048000;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 760,
+        "wires": [
+            [
+                "d913353ce562787e"
+            ]
+        ]
+    },
+    {
+        "id": "d913353ce562787e",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 22",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/dds:/)) {\n    rx_freq = rx_freq.substring(4).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "e290f43489e34976",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "if:0,0,60100;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "if:0,0,60100;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 800,
+        "wires": [
+            [
+                "ea1113cfa60e3922"
+            ]
+        ]
+    },
+    {
+        "id": "ea1113cfa60e3922",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 23",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/if:0,0,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/if:0,1,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/if:1,0,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/if:1,1,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 800,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "5510bca6878d06d2",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "if:0,1,-82000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "if:0,1,-82000;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 840,
+        "wires": [
+            [
+                "ea1113cfa60e3922"
+            ]
+        ]
+    },
+    {
+        "id": "5bc0c410eab93c2e",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "if:1,0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "if:1,0,0;",
+        "payloadType": "str",
+        "x": 90,
+        "y": 880,
+        "wires": [
+            [
+                "ea1113cfa60e3922"
+            ]
+        ]
+    },
+    {
+        "id": "b4ad0ff026b33bcd",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "if:1,1,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "if:1,1,0;",
+        "payloadType": "str",
+        "x": 90,
+        "y": 920,
+        "wires": [
+            [
+                "ea1113cfa60e3922"
+            ]
+        ]
+    },
+    {
+        "id": "d12c5449dfd2000b",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "vfo:0,0,14108100;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "vfo:0,0,14108100;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 960,
+        "wires": [
+            [
+                "7aad904ee96dfa47"
+            ]
+        ]
+    },
+    {
+        "id": "7aad904ee96dfa47",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 24",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/vfo:0,0,/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/vfo:0,1,/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/vfo:1,0,/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/vfo:1,1,/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 960,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "93dd88879c9e5c7d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "vfo:0,1,13966000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "vfo:0,1,13966000;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1000,
+        "wires": [
+            [
+                "7aad904ee96dfa47"
+            ]
+        ]
+    },
+    {
+        "id": "731c0204e342c212",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "vfo:1,0,1950000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "vfo:1,0,1950000;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 1040,
+        "wires": [
+            [
+                "7aad904ee96dfa47"
+            ]
+        ]
+    },
+    {
+        "id": "52247406ab983441",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "vfo:1,1,1950000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "vfo:1,1,1950000;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 1080,
+        "wires": [
+            [
+                "7aad904ee96dfa47"
+            ]
+        ]
+    },
+    {
+        "id": "66748b38fb2e618d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "modulation:0,DIGU;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "modulation:0,DIGU;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1120,
+        "wires": [
+            [
+                "ad32dad695c82165"
+            ]
+        ]
+    },
+    {
+        "id": "ad32dad695c82165",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 25",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/modulation:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/modulation:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1120,
+        "wires": [
+            [
+                "4cb7e3568badc0fd"
+            ]
+        ]
+    },
+    {
+        "id": "e34a42eec0236ce4",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "modulation:1,AM;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "modulation:1,AM;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 1160,
+        "wires": [
+            [
+                "ad32dad695c82165"
+            ]
+        ]
+    },
+    {
+        "id": "5eda2f2f5ec66385",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "agc_mode:0,normal;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "agc_mode:0,normal;",
+        "payloadType": "str",
+        "x": 910,
+        "y": 120,
+        "wires": [
+            [
+                "697911a758fb2f79"
+            ]
+        ]
+    },
+    {
+        "id": "a92a45353ecb337c",
+        "type": "debug",
+        "z": "689a2152c2ec7a08",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "697911a758fb2f79",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 26",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/agc_mode:0,/)) {\n    rx_freq = rx_freq.substring(11).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/agc_mode:1,/)) {\n    rx_freq = rx_freq.substring(11).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 120,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "547f59f67c09d529",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "agc_gain:0,66;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "agc_gain:0,66;",
+        "payloadType": "str",
+        "x": 900,
+        "y": 220,
+        "wires": [
+            [
+                "a6d3036768114368"
+            ]
+        ]
+    },
+    {
+        "id": "a6d3036768114368",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 27",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/agc_gain:0,/)) {\n    rx_freq = rx_freq.substring(11).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/agc_gain:1,/)) {\n    rx_freq = rx_freq.substring(11).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1110,
+        "y": 220,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "64ccf1cea97eb654",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "agc_mode:1,normal;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "agc_mode:1,normal;",
+        "payloadType": "str",
+        "x": 910,
+        "y": 160,
+        "wires": [
+            [
+                "697911a758fb2f79"
+            ]
+        ]
+    },
+    {
+        "id": "4917d1a93db29c6e",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "agc_gain:1,66;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "agc_gain:1,66;",
+        "payloadType": "str",
+        "x": 900,
+        "y": 260,
+        "wires": [
+            [
+                "a6d3036768114368"
+            ]
+        ]
+    },
+    {
+        "id": "99d60699d4bd6674",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_filter_band:0,40,3000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_filter_band:0,40,3000;",
+        "payloadType": "str",
+        "x": 930,
+        "y": 300,
+        "wires": [
+            [
+                "4c4b7c075f8caaa6"
+            ]
+        ]
+    },
+    {
+        "id": "87d8470829c3e981",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_filter_band:1,-3000,3000;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_filter_band:1,-3000,3000;",
+        "payloadType": "str",
+        "x": 920,
+        "y": 340,
+        "wires": [
+            [
+                "4c4b7c075f8caaa6"
+            ]
+        ]
+    },
+    {
+        "id": "4c4b7c075f8caaa6",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 28",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_filter_band:0,/)) {\n    rx_freq = rx_freq.substring(17).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_filter_band:1,/)) {\n    rx_freq = rx_freq.substring(17).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1130,
+        "y": 300,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "69e7aea45448fdbc",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_nb_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_nb_enable:0,false;",
+        "payloadType": "str",
+        "x": 900,
+        "y": 400,
+        "wires": [
+            [
+                "b16e74386476be6c"
+            ]
+        ]
+    },
+    {
+        "id": "b16e74386476be6c",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 29",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_nb_enable:0,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n    \n    msg.payload = rx_freq;\n //   msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_nb_enable:1,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //   msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 400,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "9996e650f2d49126",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_nb_param:0,70,20;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_nb_param:0,70,20;",
+        "payloadType": "str",
+        "x": 900,
+        "y": 480,
+        "wires": [
+            [
+                "23f012c51c904f9c"
+            ]
+        ]
+    },
+    {
+        "id": "53f420c05a65f5dc",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_nb_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_nb_enable:1,false;",
+        "payloadType": "str",
+        "x": 900,
+        "y": 440,
+        "wires": [
+            [
+                "b16e74386476be6c"
+            ]
+        ]
+    },
+    {
+        "id": "23f012c51c904f9c",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 30",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_nb_param:0,/)) {\n    rx_freq = rx_freq.substring(14).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_nb_param:1,/)) {\n    rx_freq = rx_freq.substring(14).slice(0, -1)\n\n    msg.payload = rx_freq;\n    msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 480,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "fb44debcf8fe8a0a",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_nb_param:1,70,20;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_nb_param:1,70,20;",
+        "payloadType": "str",
+        "x": 900,
+        "y": 520,
+        "wires": [
+            [
+                "23f012c51c904f9c"
+            ]
+        ]
+    },
+    {
+        "id": "95edacb2b659eed0",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_bin_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_bin_enable:0,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 560,
+        "wires": [
+            [
+                "a304961531701206"
+            ]
+        ]
+    },
+    {
+        "id": "a304961531701206",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 31",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_bin_enable:0,/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_bin_enable:0,/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 560,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "ecb1e174cbba159d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_bin_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_bin_enable:1,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 600,
+        "wires": [
+            [
+                "a304961531701206"
+            ]
+        ]
+    },
+    {
+        "id": "d6aa0c60089460db",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_nr_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_nr_enable:0,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 640,
+        "wires": [
+            [
+                "149a1f5b5ba2ff89"
+            ]
+        ]
+    },
+    {
+        "id": "149a1f5b5ba2ff89",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 32",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_nr_enable:0,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_nr_enable:0,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 640,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "e20e0fe0ac5b7c0f",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_nr_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_nr_enable:1,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 680,
+        "wires": [
+            [
+                "149a1f5b5ba2ff89"
+            ]
+        ]
+    },
+    {
+        "id": "5cdd0405f8f5a6ee",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_anc_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_anc_enable:0,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 720,
+        "wires": [
+            [
+                "2cc2bf98a692ba87"
+            ]
+        ]
+    },
+    {
+        "id": "2cc2bf98a692ba87",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 33",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_anc_enable:0,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_anc_enable:1,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 720,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "63dff69c09e715ff",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_anc_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_anc_enable:1,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 760,
+        "wires": [
+            [
+                "2cc2bf98a692ba87"
+            ]
+        ]
+    },
+    {
+        "id": "bb48b1adfc5978ee",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_anf_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_anf_enable:0,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 800,
+        "wires": [
+            [
+                "06b23364047e7522"
+            ]
+        ]
+    },
+    {
+        "id": "06b23364047e7522",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 34",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_anf_enable:0,/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_anf_enable:1,/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 800,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "4ff59d9f018c19ca",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_anf_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_anf_enable:1,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 840,
+        "wires": [
+            [
+                "06b23364047e7522"
+            ]
+        ]
+    },
+    {
+        "id": "99cdb300e178012b",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_apf_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_apf_enable:0,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 880,
+        "wires": [
+            [
+                "f3fb6a0bd4c7bfc2"
+            ]
+        ]
+    },
+    {
+        "id": "f3fb6a0bd4c7bfc2",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 35",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_apf_enable:0,/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_apf_enable:1,/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 880,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "a8d8cd4b6dd80fa3",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_apf_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_apf_enable:1,false;",
+        "payloadType": "str",
+        "x": 880,
+        "y": 920,
+        "wires": [
+            [
+                "f3fb6a0bd4c7bfc2"
+            ]
+        ]
+    },
+    {
+        "id": "cc347f9f6ed6e76f",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_dse_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_dse_enable:0,false;",
+        "payloadType": "str",
+        "x": 640,
+        "y": 960,
+        "wires": [
+            [
+                "e5ddd316d85297f9"
+            ]
+        ]
+    },
+    {
+        "id": "e5ddd316d85297f9",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 36",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_dse_enable:0,/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_dse_enable:1,/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 960,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "07cd70db11626db5",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_dse_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_dse_enable:1,false;",
+        "payloadType": "str",
+        "x": 640,
+        "y": 1000,
+        "wires": [
+            [
+                "e5ddd316d85297f9"
+            ]
+        ]
+    },
+    {
+        "id": "062c318ceaeb0062",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_nf_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_nf_enable:0,false;",
+        "payloadType": "str",
+        "x": 640,
+        "y": 1040,
+        "wires": [
+            [
+                "eaa3a40ddb88053e"
+            ]
+        ]
+    },
+    {
+        "id": "eaa3a40ddb88053e",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 37",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_nf_enable:0,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_nf_enable:1,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 1040,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "d959cf8128d561ed",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_nf_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_nf_enable:1,false;",
+        "payloadType": "str",
+        "x": 640,
+        "y": 1080,
+        "wires": [
+            [
+                "eaa3a40ddb88053e"
+            ]
+        ]
+    },
+    {
+        "id": "62d9274af51887f5",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_enable:1,false;",
+        "payloadType": "str",
+        "x": 610,
+        "y": 1120,
+        "wires": [
+            [
+                "e878583651b6541e"
+            ]
+        ]
+    },
+    {
+        "id": "e878583651b6541e",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 38",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_enable:0,/)) {\n    rx_freq = rx_freq.substring(12).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_enable:1,/)) {\n    rx_freq = rx_freq.substring(12).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 810,
+        "y": 1120,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "17439885f0f219ee",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_enable:0,false;",
+        "payloadType": "str",
+        "x": 610,
+        "y": 1160,
+        "wires": [
+            [
+                "e878583651b6541e"
+            ]
+        ]
+    },
+    {
+        "id": "bf9244e518a5c681",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "tx_enable:0,true;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tx_enable:0,true;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 1240,
+        "wires": [
+            [
+                "395037133d5b6d73"
+            ]
+        ]
+    },
+    {
+        "id": "395037133d5b6d73",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 39",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/tx_enable:0,/)) {\n    rx_freq = rx_freq.substring(12).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/tx_enable:1,/)) {\n    rx_freq = rx_freq.substring(12).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1240,
+        "wires": [
+            [
+                "58cc183a73d350b6"
+            ]
+        ]
+    },
+    {
+        "id": "9534fa878964e4f2",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "tx_enable:1,true;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tx_enable:1,true;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 1280,
+        "wires": [
+            [
+                "395037133d5b6d73"
+            ]
+        ]
+    },
+    {
+        "id": "58cc183a73d350b6",
+        "type": "debug",
+        "z": "689a2152c2ec7a08",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "32144714f9b1017d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "lock:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "lock:0,false;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1320,
+        "wires": [
+            [
+                "21f0eef296fde0a4"
+            ]
+        ]
+    },
+    {
+        "id": "21f0eef296fde0a4",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 40",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/lock:0,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/lock:1,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1320,
+        "wires": [
+            [
+                "58cc183a73d350b6"
+            ]
+        ]
+    },
+    {
+        "id": "56e4548e152ebc60",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "lock:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "lock:1,false;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1360,
+        "wires": [
+            [
+                "21f0eef296fde0a4"
+            ]
+        ]
+    },
+    {
+        "id": "e3dc954ad3312fe0",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_channel_enable:0,1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_channel_enable:0,1,false;",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1400,
+        "wires": [
+            [
+                "40dfe1abbe114dc6"
+            ]
+        ]
+    },
+    {
+        "id": "40dfe1abbe114dc6",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 41",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/lock:0,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/lock:1,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1400,
+        "wires": [
+            [
+                "58cc183a73d350b6"
+            ]
+        ]
+    },
+    {
+        "id": "9526ea1fda701d5c",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rit_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rit_enable:0,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1440,
+        "wires": [
+            [
+                "d6052e8f43a13d84"
+            ]
+        ]
+    },
+    {
+        "id": "d6052e8f43a13d84",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 42",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rit_enable:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rit_enable:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1440,
+        "wires": [
+            [
+                "58cc183a73d350b6"
+            ]
+        ]
+    },
+    {
+        "id": "8f2894a2d011d59c",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rit_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rit_enable:1,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1480,
+        "wires": [
+            [
+                "d6052e8f43a13d84"
+            ]
+        ]
+    },
+    {
+        "id": "e1ecf2ca8188d45c",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "xit_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "xit_enable:0,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1520,
+        "wires": [
+            [
+                "c5f39bae04e23ea6"
+            ]
+        ]
+    },
+    {
+        "id": "c5f39bae04e23ea6",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 43",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/xit_enable:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/xit_enable:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1520,
+        "wires": [
+            [
+                "58cc183a73d350b6"
+            ]
+        ]
+    },
+    {
+        "id": "c41bc67b237e0879",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "xit_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "xit_enable:1,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1560,
+        "wires": [
+            [
+                "c5f39bae04e23ea6"
+            ]
+        ]
+    },
+    {
+        "id": "96f8d8bf863a2e75",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "split_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "split_enable:0,false;",
+        "payloadType": "str",
+        "x": 710,
+        "y": 1240,
+        "wires": [
+            [
+                "fcba7a461214b50b"
+            ]
+        ]
+    },
+    {
+        "id": "fcba7a461214b50b",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 44",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/split_enable:0,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/split_enable:1,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1240,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "3d06c06e3d0f80b5",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "split_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "split_enable:1,false;",
+        "payloadType": "str",
+        "x": 710,
+        "y": 1280,
+        "wires": [
+            [
+                "fcba7a461214b50b"
+            ]
+        ]
+    },
+    {
+        "id": "7a51228acc06b35a",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rit_offset:0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rit_offset:0,0;",
+        "payloadType": "str",
+        "x": 690,
+        "y": 1320,
+        "wires": [
+            [
+                "aa54513435ce009b"
+            ]
+        ]
+    },
+    {
+        "id": "aa54513435ce009b",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 45",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rit_offset:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rit_offset:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1320,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "ebab824aeaded225",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rit_offset:0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rit_offset:0,0;",
+        "payloadType": "str",
+        "x": 690,
+        "y": 1360,
+        "wires": [
+            [
+                "aa54513435ce009b"
+            ]
+        ]
+    },
+    {
+        "id": "f29e39a16ae63f5c",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "xit_offset:0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "xit_offset:0,0;",
+        "payloadType": "str",
+        "x": 690,
+        "y": 1400,
+        "wires": [
+            [
+                "d013767117d56e24"
+            ]
+        ]
+    },
+    {
+        "id": "d013767117d56e24",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 46",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/xit_offset:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/xit_offset:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1400,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "7544920ae151d76d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rit_offset:0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rit_offset:0,0;",
+        "payloadType": "str",
+        "x": 690,
+        "y": 1440,
+        "wires": [
+            [
+                "d013767117d56e24"
+            ]
+        ]
+    },
+    {
+        "id": "c155cfb031045baa",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "sql_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "sql_enable:0,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1600,
+        "wires": [
+            [
+                "e029511d9398a1ab"
+            ]
+        ]
+    },
+    {
+        "id": "e029511d9398a1ab",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 47",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/sql_enable:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/sql_enable:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1600,
+        "wires": [
+            [
+                "58cc183a73d350b6"
+            ]
+        ]
+    },
+    {
+        "id": "b812d57360f491f8",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "sql_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "sql_enable:1,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1640,
+        "wires": [
+            [
+                "e029511d9398a1ab"
+            ]
+        ]
+    },
+    {
+        "id": "3c5e25a512d3a73d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "sql_level:0,-80;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "sql_level:0,-80;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 1680,
+        "wires": [
+            [
+                "d9ac28ebb9fb8495"
+            ]
+        ]
+    },
+    {
+        "id": "d9ac28ebb9fb8495",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 48",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/sql_level:0,/)) {\n    rx_freq = rx_freq.substring(12).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/sql_level:1,/)) {\n    rx_freq = rx_freq.substring(12).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1680,
+        "wires": [
+            [
+                "58cc183a73d350b6"
+            ]
+        ]
+    },
+    {
+        "id": "4269e6819c92620b",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "sql_level:1,-80;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "sql_level:1,-80;",
+        "payloadType": "str",
+        "x": 120,
+        "y": 1720,
+        "wires": [
+            [
+                "d9ac28ebb9fb8495"
+            ]
+        ]
+    },
+    {
+        "id": "18207aae0c4001de",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_mute:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_mute:0,false;",
+        "payloadType": "str",
+        "x": 700,
+        "y": 1480,
+        "wires": [
+            [
+                "b7c38f7887c4e47c"
+            ]
+        ]
+    },
+    {
+        "id": "b7c38f7887c4e47c",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 49",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_mute:0,/)) {\n    rx_freq = rx_freq.substring(10).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_mute:1,/)) {\n    rx_freq = rx_freq.substring(10).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1480,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "6adfdea35a666f4e",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_mute:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_mute:1,false;",
+        "payloadType": "str",
+        "x": 700,
+        "y": 1520,
+        "wires": [
+            [
+                "b7c38f7887c4e47c"
+            ]
+        ]
+    },
+    {
+        "id": "e113032ab2a81824",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_volume:0,0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_volume:0,0,0;",
+        "payloadType": "str",
+        "x": 700,
+        "y": 1560,
+        "wires": [
+            [
+                "f59b676464a9b539"
+            ]
+        ]
+    },
+    {
+        "id": "f59b676464a9b539",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 50",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_volume:0,0,/)) {\n    rx_freq = rx_freq.substring(14).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_volume:0,1,/)) {\n    rx_freq = rx_freq.substring(14).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_volume:1,0,/)) {\n    rx_freq = rx_freq.substring(14).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_volume:1,1,/)) {\n    rx_freq = rx_freq.substring(14).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1560,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "439fca83a305c5fe",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_volume:0,1,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_volume:0,1,0;",
+        "payloadType": "str",
+        "x": 700,
+        "y": 1600,
+        "wires": [
+            [
+                "f59b676464a9b539"
+            ]
+        ]
+    },
+    {
+        "id": "c4b93ce79d8f539f",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_volume:1,0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_volume:1,0,0;",
+        "payloadType": "str",
+        "x": 700,
+        "y": 1640,
+        "wires": [
+            [
+                "f59b676464a9b539"
+            ]
+        ]
+    },
+    {
+        "id": "2987402db9911735",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_volume:1,1,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_volume:1,1,0;",
+        "payloadType": "str",
+        "x": 700,
+        "y": 1680,
+        "wires": [
+            [
+                "f59b676464a9b539"
+            ]
+        ]
+    },
+    {
+        "id": "41070f5888da4e82",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_balance:0,0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_balance:0,0,0;",
+        "payloadType": "str",
+        "x": 1120,
+        "y": 1560,
+        "wires": [
+            [
+                "82871261f9de9459"
+            ]
+        ]
+    },
+    {
+        "id": "82871261f9de9459",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 51",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_balance:0,0,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_balance:0,1,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_balance:1,0,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_balance:1,1,/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 1560,
+        "wires": [
+            [
+                "a92a45353ecb337c"
+            ]
+        ]
+    },
+    {
+        "id": "2849d2f12c27720a",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_balance:0,1,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_balance:0,1,0;",
+        "payloadType": "str",
+        "x": 1120,
+        "y": 1600,
+        "wires": [
+            [
+                "82871261f9de9459"
+            ]
+        ]
+    },
+    {
+        "id": "6d0f0eb8721c3dc4",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_balance:1,0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_balance:1,0,0;",
+        "payloadType": "str",
+        "x": 1120,
+        "y": 1640,
+        "wires": [
+            [
+                "82871261f9de9459"
+            ]
+        ]
+    },
+    {
+        "id": "bd84533959a27b59",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_balance:1,1,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_balance:1,1,0;",
+        "payloadType": "str",
+        "x": 1120,
+        "y": 1680,
+        "wires": [
+            [
+                "82871261f9de9459"
+            ]
+        ]
+    },
+    {
+        "id": "d8e7a1a75c8b198d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_channel_enable:0,0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_channel_enable:0,0,false;",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1760,
+        "wires": [
+            [
+                "d7d4cf60519d43a0"
+            ]
+        ]
+    },
+    {
+        "id": "d7d4cf60519d43a0",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 52",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rx_channel_enable:0,0,/)) {\n    rx_freq = rx_freq.substring(22).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_channel_enable:0,1,/)) {\n    rx_freq = rx_freq.substring(22).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_channel_enable:1,0,/)) {\n    rx_freq = rx_freq.substring(22).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rx_channel_enable:1,1,/)) {\n    rx_freq = rx_freq.substring(22).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1760,
+        "wires": [
+            [
+                "0dc86c91e134ebbd"
+            ]
+        ]
+    },
+    {
+        "id": "9dcfb4e002680bc6",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_channel_enable:0,1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_channel_enable:0,1,false;",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1800,
+        "wires": [
+            [
+                "d7d4cf60519d43a0"
+            ]
+        ]
+    },
+    {
+        "id": "6ecb93309b0bae64",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_channel_enable:1,0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_channel_enable:1,0,false;",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1840,
+        "wires": [
+            [
+                "d7d4cf60519d43a0"
+            ]
+        ]
+    },
+    {
+        "id": "ba6d17006d4a87b7",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rx_channel_enable:1,1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rx_channel_enable:1,1,false;",
+        "payloadType": "str",
+        "x": 160,
+        "y": 1880,
+        "wires": [
+            [
+                "d7d4cf60519d43a0"
+            ]
+        ]
+    },
+    {
+        "id": "0dc86c91e134ebbd",
+        "type": "debug",
+        "z": "689a2152c2ec7a08",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 540,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "19c01ec903895b9d",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rit_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rit_enable:1,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1920,
+        "wires": [
+            [
+                "547121465d5734da"
+            ]
+        ]
+    },
+    {
+        "id": "547121465d5734da",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 53",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/rit_enable:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/rit_enable:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1920,
+        "wires": [
+            [
+                "0dc86c91e134ebbd"
+            ]
+        ]
+    },
+    {
+        "id": "4c8cbac268df5143",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "rit_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "rit_enable:0,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 1960,
+        "wires": [
+            [
+                "547121465d5734da"
+            ]
+        ]
+    },
+    {
+        "id": "381579873016f689",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "xit_enable:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "xit_enable:1,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 2000,
+        "wires": [
+            [
+                "50a23dd07e16f612"
+            ]
+        ]
+    },
+    {
+        "id": "50a23dd07e16f612",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 54",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/xit_enable:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/xit_enable:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2000,
+        "wires": [
+            [
+                "0dc86c91e134ebbd"
+            ]
+        ]
+    },
+    {
+        "id": "569ad1a964fd5121",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "xit_enable:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "xit_enable:0,false;",
+        "payloadType": "str",
+        "x": 130,
+        "y": 2040,
+        "wires": [
+            [
+                "50a23dd07e16f612"
+            ]
+        ]
+    },
+    {
+        "id": "b09c4e3189912ef3",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "cw_macros_speed:35;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "cw_macros_speed:35;",
+        "payloadType": "str",
+        "x": 780,
+        "y": 1760,
+        "wires": [
+            [
+                "09ac8b1778a92369"
+            ]
+        ]
+    },
+    {
+        "id": "09ac8b1778a92369",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 55",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/cw_macros_speed:/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1760,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "ac659754d064fed6",
+        "type": "debug",
+        "z": "689a2152c2ec7a08",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "d47bf047c66041e7",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "cw_macros_delay:10;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "cw_macros_delay:10;",
+        "payloadType": "str",
+        "x": 780,
+        "y": 1800,
+        "wires": [
+            [
+                "6faa6768a74960d6"
+            ]
+        ]
+    },
+    {
+        "id": "6faa6768a74960d6",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 56",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/cw_macros_delay:/)) {\n    rx_freq = rx_freq.substring(16).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1800,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "141ede88f927945b",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "cw_keyer_speed:1;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "cw_keyer_speed:1;",
+        "payloadType": "str",
+        "x": 770,
+        "y": 1840,
+        "wires": [
+            [
+                "81d581588facea04"
+            ]
+        ]
+    },
+    {
+        "id": "81d581588facea04",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 57",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/cw_keyer_speed:/)) {\n    rx_freq = rx_freq.substring(15).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1840,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "6a038add40737949",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "drive:0,77;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "drive:0,77;",
+        "payloadType": "str",
+        "x": 740,
+        "y": 1900,
+        "wires": [
+            [
+                "4ce0dc96dcba284a"
+            ]
+        ]
+    },
+    {
+        "id": "4ce0dc96dcba284a",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 58",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/drive:0,/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/drive:1,/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 1900,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "08dcc9704c7477c8",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "drive:1,77;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "drive:1,77;",
+        "payloadType": "str",
+        "x": 740,
+        "y": 1940,
+        "wires": [
+            [
+                "4ce0dc96dcba284a"
+            ]
+        ]
+    },
+    {
+        "id": "11ae44e5e6f4ba62",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "tune_drive:0,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tune_drive:0,0;",
+        "payloadType": "str",
+        "x": 740,
+        "y": 1980,
+        "wires": [
+            [
+                "53abd450a72ad74c"
+            ]
+        ]
+    },
+    {
+        "id": "53abd450a72ad74c",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 59",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/tune_drive:0,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/tune_drive:1,/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 950,
+        "y": 1980,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "32204a62f2e6be60",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "tune_drive:1,0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tune_drive:1,0;",
+        "payloadType": "str",
+        "x": 740,
+        "y": 2020,
+        "wires": [
+            [
+                "53abd450a72ad74c"
+            ]
+        ]
+    },
+    {
+        "id": "3eeac85b125440f4",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "trx:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "trx:0,false;",
+        "payloadType": "str",
+        "x": 100,
+        "y": 2100,
+        "wires": [
+            [
+                "36dd7bdbe50bac68"
+            ]
+        ]
+    },
+    {
+        "id": "36dd7bdbe50bac68",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 60",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/trx:0,/)) {\n    rx_freq = rx_freq.substring(6).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/trx:1,/)) {\n    rx_freq = rx_freq.substring(6).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2100,
+        "wires": [
+            [
+                "0dc86c91e134ebbd"
+            ]
+        ]
+    },
+    {
+        "id": "41af95e8f1424252",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "trx:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "trx:1,false;",
+        "payloadType": "str",
+        "x": 100,
+        "y": 2140,
+        "wires": [
+            [
+                "36dd7bdbe50bac68"
+            ]
+        ]
+    },
+    {
+        "id": "6c62022f37afcf31",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "tune:0,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tune:0,false;",
+        "payloadType": "str",
+        "x": 710,
+        "y": 2060,
+        "wires": [
+            [
+                "af3ef45adae72175"
+            ]
+        ]
+    },
+    {
+        "id": "af3ef45adae72175",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 61",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/tune:0,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/tune:1,/)) {\n    rx_freq = rx_freq.substring(7).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 2060,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "9350fb1bf1bfed0b",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "tune:1,false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tune:1,false;",
+        "payloadType": "str",
+        "x": 710,
+        "y": 2100,
+        "wires": [
+            [
+                "af3ef45adae72175"
+            ]
+        ]
+    },
+    {
+        "id": "bc8c4287b83803b4",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "iq_stop:0;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "iq_stop:0;",
+        "payloadType": "str",
+        "x": 100,
+        "y": 2200,
+        "wires": [
+            [
+                "d045f7726a83f777"
+            ]
+        ]
+    },
+    {
+        "id": "d045f7726a83f777",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 62",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/iq_stop:/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\nif (rx_freq.match(/iq_stop:/)) {\n    rx_freq = rx_freq.substring(8).slice(0, -1)\n\n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 2200,
+        "wires": [
+            [
+                "35bbf82582bee3e3"
+            ]
+        ]
+    },
+    {
+        "id": "19207e6066667c8a",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "iq_stop:1;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "iq_stop:1;",
+        "payloadType": "str",
+        "x": 100,
+        "y": 2240,
+        "wires": [
+            [
+                "d045f7726a83f777"
+            ]
+        ]
+    },
+    {
+        "id": "35bbf82582bee3e3",
+        "type": "debug",
+        "z": "689a2152c2ec7a08",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "b02b5e19f694d836",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "app_focus:false;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "app_focus:false;",
+        "payloadType": "str",
+        "x": 720,
+        "y": 2160,
+        "wires": [
+            [
+                "2e91347fcf4f84d8"
+            ]
+        ]
+    },
+    {
+        "id": "2e91347fcf4f84d8",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 63",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/app_focus:/)) {\n    rx_freq = rx_freq.substring(10).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 2160,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "d7c74b44c577ec52",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "tx_frequency:14108100;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tx_frequency:14108100;",
+        "payloadType": "str",
+        "x": 150,
+        "y": 2300,
+        "wires": [
+            [
+                "c00714a119e8bd90"
+            ]
+        ]
+    },
+    {
+        "id": "c00714a119e8bd90",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 64",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/tx_frequency:/)) {\n    rx_freq = rx_freq.substring(13).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2300,
+        "wires": [
+            [
+                "35bbf82582bee3e3"
+            ]
+        ]
+    },
+    {
+        "id": "45bc533e062887a7",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "audio_stream_sample_type:float32;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "audio_stream_sample_type:float32;",
+        "payloadType": "str",
+        "x": 780,
+        "y": 2200,
+        "wires": [
+            [
+                "743ffa23f70ab73c"
+            ]
+        ]
+    },
+    {
+        "id": "743ffa23f70ab73c",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 65",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/audio_stream_sample_type:/)) {\n    rx_freq = rx_freq.substring(25).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 2200,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "a83785dbaaad8552",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "audio_stream_channels:2;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "audio_stream_channels:2;",
+        "payloadType": "str",
+        "x": 750,
+        "y": 2240,
+        "wires": [
+            [
+                "d8d212d44220d696"
+            ]
+        ]
+    },
+    {
+        "id": "d8d212d44220d696",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 66",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/audio_stream_channels:/)) {\n    rx_freq = rx_freq.substring(22).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 2240,
+        "wires": [
+            [
+                "ac659754d064fed6"
+            ]
+        ]
+    },
+    {
+        "id": "9a6e2e1a874fad81",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "stop;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "stop;",
+        "payloadType": "str",
+        "x": 90,
+        "y": 2340,
+        "wires": [
+            [
+                "ee9a420ef04999e8"
+            ]
+        ]
+    },
+    {
+        "id": "ee9a420ef04999e8",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 67",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/stop;/)) {\n    rx_freq = rx_freq.substring(5).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2340,
+        "wires": [
+            [
+                "35bbf82582bee3e3"
+            ]
+        ]
+    },
+    {
+        "id": "c2066c5ae7b09108",
+        "type": "inject",
+        "z": "689a2152c2ec7a08",
+        "name": "ready;",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ready;",
+        "payloadType": "str",
+        "x": 90,
+        "y": 2380,
+        "wires": [
+            [
+                "d8b8d2463306e2fd"
+            ]
+        ]
+    },
+    {
+        "id": "d8b8d2463306e2fd",
+        "type": "function",
+        "z": "689a2152c2ec7a08",
+        "name": "function 68",
+        "func": "\nvar rx_freq = msg.payload\n\nif (rx_freq.match(/ready;/)) {\n    rx_freq = rx_freq.substring(6).slice(0, -1)\n    \n    msg.payload = rx_freq;\n    //msg.topic = msg.payload.split(\",\")\n\n}\n\n//node.send(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2380,
+        "wires": [
+            [
+                "35bbf82582bee3e3"
+            ]
+        ]
+    },
+    {
+        "id": "28b2a90df127827d",
+        "type": "comment",
+        "z": "df5b6e241f4658e3",
+        "name": "",
+        "info": "1. The character «:» is replaced with «^»;\n2. The character «,» is replaced with «~»;\n3. The character «;» is replaced with «*». \n\ncw_macros:0,TU RA6LH 599",
+        "x": 420,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "243e0097e869248e",
+        "type": "debug",
+        "z": "df5b6e241f4658e3",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "a4bc150301d17520",
+        "type": "change",
+        "z": "df5b6e241f4658e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": ":",
+                "fromt": "str",
+                "to": "^",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": ",",
+                "fromt": "str",
+                "to": "~",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": ";",
+                "fromt": "str",
+                "to": "*",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "243e0097e869248e",
+                "a24c5be52882559d"
+            ]
+        ]
+    },
+    {
+        "id": "a24c5be52882559d",
+        "type": "function",
+        "z": "df5b6e241f4658e3",
+        "name": "CW macro",
+        "func": "msg.cw = \"cw_macros:0,\" + msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 140,
+        "wires": [
+            [
+                "243e0097e869248e"
+            ]
+        ]
+    },
+    {
+        "id": "4202446084fa1d06",
+        "type": "inject",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tune:0,true;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 100,
+        "wires": [
+            [
+                "a390f029658dd5f5"
+            ]
+        ]
+    },
+    {
+        "id": "235667d7f5876d04",
+        "type": "inject",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tune:0,false;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "9d52d2c6397860bf"
+            ]
+        ]
+    },
+    {
+        "id": "a390f029658dd5f5",
+        "type": "change",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "set TUNE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "tune:0,true;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "c5112d3b58119fc5"
+            ]
+        ]
+    },
+    {
+        "id": "9d52d2c6397860bf",
+        "type": "change",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "set TUNE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "tune:0,false;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 140,
+        "wires": [
+            [
+                "c5112d3b58119fc5"
+            ]
+        ]
+    },
+    {
+        "id": "c5112d3b58119fc5",
+        "type": "link out",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "7a3c3ae5cc437a04"
+        ],
+        "x": 565,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "97d5d77a8b1c2c37",
+        "type": "inject",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tune:1,true;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 180,
+        "wires": [
+            [
+                "866cdbc8e906b0f4"
+            ]
+        ]
+    },
+    {
+        "id": "9214caf05ffe1145",
+        "type": "inject",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "tune:1,false;",
+        "payloadType": "str",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "dfcf60d365b3653b"
+            ]
+        ]
+    },
+    {
+        "id": "866cdbc8e906b0f4",
+        "type": "change",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "set TUNE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "tune:1,true;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "c5112d3b58119fc5"
+            ]
+        ]
+    },
+    {
+        "id": "dfcf60d365b3653b",
+        "type": "change",
+        "z": "fb8a7e25a5bd71f1",
+        "name": "set TUNE",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "tune:1,false;",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 220,
+        "wires": [
+            [
+                "c5112d3b58119fc5"
+            ]
+        ]
+    },
+    {
+        "id": "a6f4d7230eaad671",
+        "type": "comment",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "StealthLoop I3VHF",
+        "info": "",
+        "x": 150,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "2e234ab20cd1fe41",
+        "type": "inject",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "18MHz",
+        "props": [
+            {
+                "p": "freq",
+                "v": "00018100000",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "e171fa9741397766"
+            ]
+        ]
+    },
+    {
+        "id": "d21ae087a9dd3b89",
+        "type": "delay",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "400",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 630,
+        "y": 80,
+        "wires": [
+            [
+                "af6919109c2ed0ee"
+            ]
+        ]
+    },
+    {
+        "id": "a43e210502b99643",
+        "type": "delay",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 430,
+        "y": 100,
+        "wires": [
+            [
+                "d21ae087a9dd3b89"
+            ]
+        ]
+    },
+    {
+        "id": "af6919109c2ed0ee",
+        "type": "delay",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 830,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e171fa9741397766",
+        "type": "function",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "function 11",
+        "func": "msg.payload = \"\\n\\nFA\" + msg.freq + \";\\n\\n\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "a43e210502b99643",
+                "420bc9e5e8697b8a"
+            ]
+        ]
+    },
+    {
+        "id": "928e28d33e0f9bf1",
+        "type": "inject",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "14MHz",
+        "props": [
+            {
+                "p": "freq",
+                "v": "00014074000",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "e171fa9741397766"
+            ]
+        ]
+    },
+    {
+        "id": "6507aedd8f3e1ea1",
+        "type": "debug",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "StealthLoop6secDelay",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "420bc9e5e8697b8a",
+        "type": "delay",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "6",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 420,
+        "y": 140,
+        "wires": [
+            [
+                "6507aedd8f3e1ea1"
+            ]
+        ]
+    },
+    {
+        "id": "268d50778f62ffd6",
+        "type": "inject",
+        "z": "d7a6eff1aaf9dca8",
+        "name": "7053 FreeDATA",
+        "props": [
+            {
+                "p": "freq",
+                "v": "00007053000",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "e171fa9741397766"
+            ]
+        ]
+    }
+]
